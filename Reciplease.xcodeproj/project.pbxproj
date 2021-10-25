@@ -34,7 +34,7 @@
 		C8B8F7FB2719CB7D00A2A81B /* IngredientsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B8F7FA2719CB7D00A2A81B /* IngredientsCell.swift */; };
 		C8B8F7FD271B1F2600A2A81B /* FavoriteRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B8F7FC271B1F2600A2A81B /* FavoriteRecipe.swift */; };
 		C8B8F803271C1AA200A2A81B /* RecipeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B8F802271C1AA200A2A81B /* RecipeEntity.swift */; };
-		C8FB958A27256011005E0AFA /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8FB958927256011005E0AFA /* Alamofire.framework */; };
+		C8E887EC2726D9530018BF60 /* Pods_Reciplease.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E887EB2726D9530018BF60 /* Pods_Reciplease.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +80,7 @@
 		C8B8F7FA2719CB7D00A2A81B /* IngredientsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsCell.swift; sourceTree = "<group>"; };
 		C8B8F7FC271B1F2600A2A81B /* FavoriteRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRecipe.swift; sourceTree = "<group>"; };
 		C8B8F802271C1AA200A2A81B /* RecipeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeEntity.swift; sourceTree = "<group>"; };
+		C8E887EB2726D9530018BF60 /* Pods_Reciplease.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Reciplease.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8FB958927256011005E0AFA /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8FB958A27256011005E0AFA /* Alamofire.framework in Frameworks */,
+				C8E887EC2726D9530018BF60 /* Pods_Reciplease.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +107,7 @@
 		7883480857B44193F8C0C82D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C8E887EB2726D9530018BF60 /* Pods_Reciplease.framework */,
 				C8FB958927256011005E0AFA /* Alamofire.framework */,
 				93981EBE58FD6E1F6CAA8A74 /* Pods_Reciplease.framework */,
 			);
