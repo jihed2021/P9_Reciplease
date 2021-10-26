@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FhZ-vA-K0G">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FhZ-vA-K0G">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -31,7 +31,7 @@
                                                 <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="vjc-NL-WTg">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recipe" translatesAutoresizingMaskIntoConstraints="NO" id="33P-78-js8">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="33P-78-js8">
                                                             <rect key="frame" x="0.0" y="5" width="414" height="110"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Recipe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psi-eD-VWE">
@@ -174,7 +174,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recipe" translatesAutoresizingMaskIntoConstraints="NO" id="Zpj-aQ-p3B">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zpj-aQ-p3B">
                                 <rect key="frame" x="0.0" y="88" width="414" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="wVD-Hy-f39"/>
@@ -586,11 +586,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5Al-ml-2tk"/>
+        <segue reference="I2H-sJ-9T4"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="hand.thumbsup" catalog="system" width="128" height="128"/>
-        <image name="recipe" width="300" height="300"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="stopwatch" catalog="system" width="121" height="128"/>
         <systemColor name="systemBackgroundColor">

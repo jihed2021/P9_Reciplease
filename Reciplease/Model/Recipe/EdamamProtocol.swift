@@ -7,7 +7,7 @@
 
 import Foundation
 import Alamofire
-protocol EdamamProtocol {
 
+protocol EdamamProtocol {
     func request(url: URL, completionHandler: @escaping (AFDataResponse<Any>) -> Void)
 }

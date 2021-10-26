@@ -20,7 +20,7 @@ class RecipeCell: UITableViewCell {
         didSet {
             titleRecipeLabel.text = recipe?.label
             ingredientsLabel.text = recipe?.ingredientLines.joined(separator: ", ")
-            totalTimeLabel.text = "\(recipe?.totalTime)"
+            totalTimeLabel.text = String(describing: recipe?.totalTime)
             recipeImageView.load(urlImageString: recipe?.image)
         }
     }

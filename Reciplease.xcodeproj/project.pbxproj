@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A5E2D60DC993E2CC18AB4100 /* Pods_Reciplease.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93981EBE58FD6E1F6CAA8A74 /* Pods_Reciplease.framework */; };
 		C8070D18272154640071B4D4 /* CoreDataTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8070D17272154640071B4D4 /* CoreDataTestCase.swift */; };
 		C8070D1E27215EB30071B4D4 /* EdamamResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = C8070D1D27215EB30071B4D4 /* EdamamResponse.json */; };
 		C8070D20272160F00071B4D4 /* RecipeServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8070D1F272160F00071B4D4 /* RecipeServiceTest.swift */; };
 		C8070D22272161310071B4D4 /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8070D21272161310071B4D4 /* FakeResponseData.swift */; };
-		C8070D252722AB4F0071B4D4 /* MokingURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8070D242722AB4F0071B4D4 /* MokingURLProtocol.swift */; };
 		C8070D272722D3F70071B4D4 /* EdamamProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8070D262722D3F70071B4D4 /* EdamamProtocol.swift */; };
-		C8070D292722D4070071B4D4 /* EdamamSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8070D282722D4070071B4D4 /* EdamamSession.swift */; };
 		C8070D2B27246AC70071B4D4 /* FakeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8070D2A27246AC70071B4D4 /* FakeResponse.swift */; };
 		C8070D66272549D20071B4D4 /* EdamamSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8070D65272549D20071B4D4 /* EdamamSessionFake.swift */; };
+		C84D0DF927280C40009A7E4D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C84D0DF827280C40009A7E4D /* Alamofire */; };
+		C84D0DFB27281101009A7E4D /* EdamamSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84D0DFA27281101009A7E4D /* EdamamSession.swift */; };
+		C84D0DFF2728140E009A7E4D /* cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C84D0DFE2728140E009A7E4D /* cell.xib */; };
 		C894C76127130BE70082D357 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C894C76027130BE70082D357 /* AppDelegate.swift */; };
 		C894C76327130BE70082D357 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C894C76227130BE70082D357 /* SceneDelegate.swift */; };
 		C894C76827130BE70082D357 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C894C76627130BE70082D357 /* Main.storyboard */; };
@@ -34,7 +34,6 @@
 		C8B8F7FB2719CB7D00A2A81B /* IngredientsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B8F7FA2719CB7D00A2A81B /* IngredientsCell.swift */; };
 		C8B8F7FD271B1F2600A2A81B /* FavoriteRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B8F7FC271B1F2600A2A81B /* FavoriteRecipe.swift */; };
 		C8B8F803271C1AA200A2A81B /* RecipeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B8F802271C1AA200A2A81B /* RecipeEntity.swift */; };
-		C8E887EC2726D9530018BF60 /* Pods_Reciplease.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E887EB2726D9530018BF60 /* Pods_Reciplease.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,19 +47,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		93981EBE58FD6E1F6CAA8A74 /* Pods_Reciplease.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reciplease.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8E24E04EE563BED30D1CB6A /* Pods-Reciplease.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reciplease.debug.xcconfig"; path = "Target Support Files/Pods-Reciplease/Pods-Reciplease.debug.xcconfig"; sourceTree = "<group>"; };
-		C724106A25F8E2FB37579F7E /* Pods-Reciplease.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reciplease.release.xcconfig"; path = "Target Support Files/Pods-Reciplease/Pods-Reciplease.release.xcconfig"; sourceTree = "<group>"; };
 		C8070D0E272154170071B4D4 /* RecipleaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipleaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8070D17272154640071B4D4 /* CoreDataTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTestCase.swift; sourceTree = "<group>"; };
 		C8070D1D27215EB30071B4D4 /* EdamamResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EdamamResponse.json; sourceTree = "<group>"; };
 		C8070D1F272160F00071B4D4 /* RecipeServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeServiceTest.swift; sourceTree = "<group>"; };
 		C8070D21272161310071B4D4 /* FakeResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
-		C8070D242722AB4F0071B4D4 /* MokingURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MokingURLProtocol.swift; sourceTree = "<group>"; };
 		C8070D262722D3F70071B4D4 /* EdamamProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamProtocol.swift; sourceTree = "<group>"; };
-		C8070D282722D4070071B4D4 /* EdamamSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamSession.swift; sourceTree = "<group>"; };
 		C8070D2A27246AC70071B4D4 /* FakeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeResponse.swift; sourceTree = "<group>"; };
 		C8070D65272549D20071B4D4 /* EdamamSessionFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamSessionFake.swift; sourceTree = "<group>"; };
+		C84D0DFA27281101009A7E4D /* EdamamSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamSession.swift; sourceTree = "<group>"; };
+		C84D0DFE2728140E009A7E4D /* cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cell.xib; sourceTree = "<group>"; };
 		C894C75D27130BE70082D357 /* Reciplease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reciplease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C894C76027130BE70082D357 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C894C76227130BE70082D357 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,7 +76,6 @@
 		C8B8F7FA2719CB7D00A2A81B /* IngredientsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsCell.swift; sourceTree = "<group>"; };
 		C8B8F7FC271B1F2600A2A81B /* FavoriteRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRecipe.swift; sourceTree = "<group>"; };
 		C8B8F802271C1AA200A2A81B /* RecipeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeEntity.swift; sourceTree = "<group>"; };
-		C8E887EB2726D9530018BF60 /* Pods_Reciplease.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Reciplease.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8FB958927256011005E0AFA /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,7 +84,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8E887EC2726D9530018BF60 /* Pods_Reciplease.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5E2D60DC993E2CC18AB4100 /* Pods_Reciplease.framework in Frameworks */,
+				C84D0DF927280C40009A7E4D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,9 +101,7 @@
 		7883480857B44193F8C0C82D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C8E887EB2726D9530018BF60 /* Pods_Reciplease.framework */,
 				C8FB958927256011005E0AFA /* Alamofire.framework */,
-				93981EBE58FD6E1F6CAA8A74 /* Pods_Reciplease.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,8 +109,6 @@
 		A9DB75E07EA70E45A31DB1CD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B8E24E04EE563BED30D1CB6A /* Pods-Reciplease.debug.xcconfig */,
-				C724106A25F8E2FB37579F7E /* Pods-Reciplease.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -155,7 +145,6 @@
 		C8070D232722AB250071B4D4 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				C8070D242722AB4F0071B4D4 /* MokingURLProtocol.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -213,6 +202,7 @@
 				C894C76627130BE70082D357 /* Main.storyboard */,
 				C894C7B227145BBF0082D357 /* RecipeCell.swift */,
 				C8B8F7FA2719CB7D00A2A81B /* IngredientsCell.swift */,
+				C84D0DFE2728140E009A7E4D /* cell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,7 +232,7 @@
 				C8B8F7E227174C6000A2A81B /* RecipeService.swift */,
 				C8B8F7E427174CF100A2A81B /* Recipe.swift */,
 				C8070D262722D3F70071B4D4 /* EdamamProtocol.swift */,
-				C8070D282722D4070071B4D4 /* EdamamSession.swift */,
+				C84D0DFA27281101009A7E4D /* EdamamSession.swift */,
 			);
 			path = Recipe;
 			sourceTree = "<group>";
@@ -297,17 +287,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C894C77427130BE80082D357 /* Build configuration list for PBXNativeTarget "Reciplease" */;
 			buildPhases = (
-				6F784725A01FA0015E929BC6 /* [CP] Check Pods Manifest.lock */,
 				C894C75927130BE70082D357 /* Sources */,
 				C894C75A27130BE70082D357 /* Frameworks */,
 				C894C75B27130BE70082D357 /* Resources */,
-				8B6435E43DD7A5DD0BF07FDE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Reciplease;
+			packageProductDependencies = (
+				C84D0DF827280C40009A7E4D /* Alamofire */,
+			);
 			productName = Reciplease;
 			productReference = C894C75D27130BE70082D357 /* Reciplease.app */;
 			productType = "com.apple.product-type.application";
@@ -341,6 +332,9 @@
 				Base,
 			);
 			mainGroup = C894C75427130BE70082D357;
+			packageReferences = (
+				C84D0DF727280C40009A7E4D /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = C894C75E27130BE70082D357 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -364,6 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C84D0DFF2728140E009A7E4D /* cell.xib in Resources */,
 				C894C7B0271431180082D357 /* File in Resources */,
 				C894C77027130BE80082D357 /* LaunchScreen.storyboard in Resources */,
 				C894C76D27130BE80082D357 /* Assets.xcassets in Resources */,
@@ -372,48 +367,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		6F784725A01FA0015E929BC6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Reciplease-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8B6435E43DD7A5DD0BF07FDE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Reciplease/Pods-Reciplease-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Reciplease/Pods-Reciplease-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Reciplease/Pods-Reciplease-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C8070D0A272154170071B4D4 /* Sources */ = {
@@ -433,17 +386,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C894C7B327145BBF0082D357 /* RecipeCell.swift in Sources */,
+				C84D0DFB27281101009A7E4D /* EdamamSession.swift in Sources */,
 				C894C76B27130BE70082D357 /* Reciplease.xcdatamodeld in Sources */,
 				C8B8F7E327174C6000A2A81B /* RecipeService.swift in Sources */,
 				C894C76127130BE70082D357 /* AppDelegate.swift in Sources */,
 				C8B8F803271C1AA200A2A81B /* RecipeEntity.swift in Sources */,
 				C8B8F7FB2719CB7D00A2A81B /* IngredientsCell.swift in Sources */,
 				C8B8F7E127172B4500A2A81B /* IngredientsViewController.swift in Sources */,
-				C8070D292722D4070071B4D4 /* EdamamSession.swift in Sources */,
 				C8B8F7F927199FC700A2A81B /* UIImageViewExtension.swift in Sources */,
 				C894C76327130BE70082D357 /* SceneDelegate.swift in Sources */,
 				C8B8F7D7271712CE00A2A81B /* RecipeViewController.swift in Sources */,
-				C8070D252722AB4F0071B4D4 /* MokingURLProtocol.swift in Sources */,
 				C8B8F7FD271B1F2600A2A81B /* FavoriteRecipe.swift in Sources */,
 				C8070D272722D3F70071B4D4 /* EdamamProtocol.swift in Sources */,
 				C8B8F7F527197E1600A2A81B /* IngredientsRecipeDetailsViewController.swift in Sources */,
@@ -488,6 +440,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -512,6 +465,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -646,12 +600,12 @@
 		};
 		C894C77527130BE80082D357 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8E24E04EE563BED30D1CB6A /* Pods-Reciplease.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Reciplease/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -674,12 +628,12 @@
 		};
 		C894C77627130BE80082D357 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C724106A25F8E2FB37579F7E /* Pods-Reciplease.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Reciplease/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -731,6 +685,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C84D0DF727280C40009A7E4D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C84D0DF827280C40009A7E4D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C84D0DF727280C40009A7E4D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C894C76927130BE70082D357 /* Reciplease.xcdatamodeld */ = {

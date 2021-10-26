@@ -18,7 +18,7 @@ class RecipeServiceTest: XCTestCase {
         let recipeService = RecipeService(edamamSession: edamamSessionFake)
         //When
         let expectation = XCTestExpectation(description: "Wait for queue change.")
-        recipeService.getRecipe(ingredients: ["chicken, cheese"]) { success, recipes in
+        recipeService.getRecipe(ingredients: ["chicken", "cheese"]) { success, recipes in
             XCTAssertFalse(success)
             XCTAssertNil(recipes)
             expectation.fulfill()
@@ -33,7 +33,7 @@ class RecipeServiceTest: XCTestCase {
         let recipeService = RecipeService(edamamSession: edamamSessionFake)
         //When
         let expectation = XCTestExpectation(description: "Wait for queue change.")
-        recipeService.getRecipe(ingredients: ["chicken, cheese"]) { success, recipes in
+        recipeService.getRecipe(ingredients: ["chicken","cheese"]) { success, recipes in
             XCTAssertFalse(success)
             XCTAssertNil(recipes)
             expectation.fulfill()
@@ -48,7 +48,7 @@ class RecipeServiceTest: XCTestCase {
         let recipeService = RecipeService(edamamSession: edamamSessionFake)
         //When
         let expectation = XCTestExpectation(description: "Wait for queue change.")
-        recipeService.getRecipe(ingredients: ["chicken, cheese"]) { success, recipes in
+        recipeService.getRecipe(ingredients: ["chicken", "cheese"]) { success, recipes in
             XCTAssertFalse(success)
             XCTAssertNil(recipes)
             expectation.fulfill()
@@ -63,7 +63,7 @@ class RecipeServiceTest: XCTestCase {
         let recipeService = RecipeService(edamamSession: edamamSessionFake)
         //When
         let expectation = XCTestExpectation(description: "Wait for queue change.")
-        recipeService.getRecipe(ingredients: ["chicken, cheese"]) { success, recipes in
+        recipeService.getRecipe(ingredients: ["chicken", "cheese"]) { success, recipes in
             XCTAssertFalse(success)
             XCTAssertNil(recipes)
             expectation.fulfill()
@@ -78,7 +78,7 @@ class RecipeServiceTest: XCTestCase {
         let recipeService = RecipeService(edamamSession: edamamSessionFake)
         //When
         let expectation = XCTestExpectation(description: "Wait for queue change.")
-        recipeService.getRecipe(ingredients: ["chicken, cheese"]) { success, recipes in
+        recipeService.getRecipe(ingredients: ["chicken", "cheese"]) { success, recipes in
             XCTAssertFalse(success)
             XCTAssertNil(recipes)
             expectation.fulfill()
@@ -93,7 +93,7 @@ class RecipeServiceTest: XCTestCase {
         let recipeService = RecipeService(edamamSession: edamamSessionFake)
         //When
         let expectation = XCTestExpectation(description: "Wait for queue change.")
-        recipeService.getRecipe(ingredients: ["chicken, cheese"]) { success, recipes in
+        recipeService.getRecipe(ingredients: ["chicken", "cheese"]) { success, recipes in
             XCTAssertTrue(success)
             XCTAssertNotNil(recipes)
             XCTAssertEqual(recipes?[0].label, "Salsa Chicken & Cheese Tortillas")

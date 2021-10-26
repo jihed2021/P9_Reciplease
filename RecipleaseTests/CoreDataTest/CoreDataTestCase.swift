@@ -27,6 +27,7 @@ class CoreDataTestCase: XCTestCase {
     }
     
     func testGivenFavoriteRecipe_WhenRemoveFromFavorite_ThenRecipeRemoved() {
+        RecipeEntity.addRecipeToFavorite(recipe: fakeRecipe)
         XCTAssertTrue(RecipeEntity.checkIfFavoriteRecipe(with: "fakeUrl"))
         RecipeEntity.deleteRecipeFromFavorite(with: "fakeUrl")
         XCTAssertFalse(RecipeEntity.checkIfFavoriteRecipe(with: "fakeUrl"))
