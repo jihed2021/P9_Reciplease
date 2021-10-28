@@ -20,6 +20,14 @@ class RecipeViewController: UIViewController {
         }
         recipeListtableView.reloadData()
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let nib = UINib(nibName: "ListRecipesCell", bundle: nil)
+        recipeListtableView.register(nib, forCellReuseIdentifier: "recipeCellIdentifier")
+        recipeListtableView.reloadData()
+    }
 }
 
 
@@ -33,11 +41,14 @@ extension RecipeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell", for: indexPath) as? RecipeCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCellIdentifier", for: indexPath) as? RecipeCell else {
             return UITableViewCell()
         }
         cell.recipe = listRecipes[indexPath.row]
         return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "ingredientsRecipe") as? IngredientsRecipeDetailsViewController {

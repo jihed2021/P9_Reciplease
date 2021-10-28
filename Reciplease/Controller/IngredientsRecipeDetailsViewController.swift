@@ -38,7 +38,7 @@ class IngredientsRecipeDetailsViewController: UIViewController {
         recipeImage.load(urlImageString: recipe.image)
         ingredientListTextView.text = recipe.ingredientLines.joined(separator: "\n - ")
         recipeTitle.text = recipe.label
-        time.text = String (recipe.totalTime)
+        time.text = String(recipe.totalTime)
     }
     
     private func favoriteButtonSetup() {

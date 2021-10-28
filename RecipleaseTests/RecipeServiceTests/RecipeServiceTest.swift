@@ -11,6 +11,14 @@ import Alamofire
 
 class RecipeServiceTest: XCTestCase {
     
+//    func testGetResquestwithEdamamSession() {
+//        let fakeResponse = FakeResponse(response: FakeResponseData.responseOK, data: FakeResponseData.quoteCorrectData, error: nil)
+//        let edamamSessionFake = EdamamSessionFake(fakeResponse: fakeResponse)
+//        let urlRequest = URLRequest(url: URL(string: "https://google.fr")!)
+//        edamamSessionFake.request(url:urlRequest)! { AFDataResponse<Any> in
+//            <#code#>
+//        }
+//    }
     func testGetRecipeShouldPostFailedCallbackIfError() {
         //Given
         let fakeResponse = FakeResponse(response: nil, data: nil, error: FakeResponseData.error)

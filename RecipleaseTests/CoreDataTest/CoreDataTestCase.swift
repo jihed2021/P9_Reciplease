@@ -12,15 +12,7 @@ import CoreData
 class CoreDataTestCase: XCTestCase {
 
    private let fakeRecipe = Recipe(label: "pizza", image: "https://www.openclassrooms.com", ingredientLines: ["cheese","pizza legs"], url: "fakeUrl", totalTime: 20, yield: 3)
-//    
-//    override func setUp() {
-//       RecipeEntity.deleteRecipeFromFavorite(with: fakeRecipe.url)
-//    }
-//    
-////    override class func tearDown() {
-////        RecipeEntity.deleteRecipeFromFavorite(with: fakeRecipe.url)
-////    }
-    
+   
     func testGivenRecipe_WhenAddToFaorite_ThenRecipeIsAddedToFavorite() {
         RecipeEntity.addRecipeToFavorite(recipe: fakeRecipe)
         XCTAssertTrue(RecipeEntity.checkIfFavoriteRecipe(with: "fakeUrl"))
@@ -32,5 +24,8 @@ class CoreDataTestCase: XCTestCase {
         RecipeEntity.deleteRecipeFromFavorite(with: "fakeUrl")
         XCTAssertFalse(RecipeEntity.checkIfFavoriteRecipe(with: "fakeUrl"))
     }
-    
+    func testGivenRecipe_WhenAddToAll_ThenAllUpdated() {
+        RecipeEntity.addRecipeToFavorite(recipe: fakeRecipe)
+        XCTAssertFalse(RecipeEntity.all().isEmpty)
+    }
 }

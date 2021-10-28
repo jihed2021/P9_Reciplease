@@ -40,6 +40,7 @@ class RecipeEntity: NSManagedObject {
             fatalError("Error to save Recip: \(error)")
         }
     }
+    
     private static func updateRecipe(_ favoriteRecipe: RecipeEntity, _ recipe: Recipe) {
         favoriteRecipe.label = recipe.label
         favoriteRecipe.totalTime = recipe.totalTime
@@ -75,4 +76,5 @@ class RecipeEntity: NSManagedObject {
             fatalError("Error to save Recip: \(error)")
         }
     }
+ 
 }
