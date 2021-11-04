@@ -13,7 +13,7 @@ class CoreDataTestCase: XCTestCase {
 
    private let fakeRecipe = Recipe(label: "pizza", image: "https://www.openclassrooms.com", ingredientLines: ["cheese","pizza legs"], url: "fakeUrl", totalTime: 20, yield: 3)
    
-    func testGivenRecipe_WhenAddToFaorite_ThenRecipeIsAddedToFavorite() {
+    func testGivenRecipe_When_AddToFaorite_ThenRecipeIsAddedToFavorite() {
         RecipeEntity.addRecipeToFavorite(recipe: fakeRecipe)
         XCTAssertTrue(RecipeEntity.checkIfFavoriteRecipe(with: "fakeUrl"))
     }

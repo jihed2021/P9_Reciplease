@@ -12,8 +12,9 @@ class RecipeEntity: NSManagedObject {
 
     static func all() -> [Recipe] {
         let request: NSFetchRequest<RecipeEntity> = RecipeEntity.fetchRequest()
-        guard let favoriteRecipes = try? AppDelegate.viewContext.fetch(request) else {
-            return []
+        var favoriteRecipes: [RecipeEntity] = []
+        if let recipes = try? AppDelegate.viewContext.fetch(request){
+            favoriteRecipes = recipes
         }
         var recipes = [Recipe]()
         for favorite in favoriteRecipes {
@@ -34,11 +35,7 @@ class RecipeEntity: NSManagedObject {
     static func addRecipeToFavorite(recipe:Recipe) {
         let favoriteRecipe = RecipeEntity(context: AppDelegate.viewContext)
         updateRecipe(favoriteRecipe, recipe)
-        do {
-            try AppDelegate.viewContext.save()
-        } catch {
-            fatalError("Error to save Recip: \(error)")
-        }
+        try? AppDelegate.viewContext.save()
     }
     
     private static func updateRecipe(_ favoriteRecipe: RecipeEntity, _ recipe: Recipe) {
@@ -54,10 +51,7 @@ class RecipeEntity: NSManagedObject {
     static func checkIfFavoriteRecipe(with url: String) -> Bool {
         let request: NSFetchRequest<RecipeEntity> = RecipeEntity.fetchRequest()
         request.predicate = NSPredicate(format: "url == %@", url)
-        guard let count = try? AppDelegate.viewContext.count(for: request) else {
-            return false
-        }
-        return count == 0 ? false : true
+        return (try? AppDelegate.viewContext.count(for: request)) == 0 ? false : true
     }
     
     //MARK: - Delete recipe from Core Data
@@ -70,11 +64,6 @@ class RecipeEntity: NSManagedObject {
                 AppDelegate.viewContext.delete(recipe)
             }
         }
-        do {
-            try AppDelegate.viewContext.save()
-        } catch {
-            fatalError("Error to save Recip: \(error)")
-        }
+            try? AppDelegate.viewContext.save()
     }
- 
 }

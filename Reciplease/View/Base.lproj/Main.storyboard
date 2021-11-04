@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Recipe View Controller-->
+        <!--Recipes-->
         <scene sceneID="DYu-mI-4Fc">
             <objects>
                 <viewController id="3DT-dw-8Ja" customClass="RecipeViewController" customModule="Reciplease" customModuleProvider="target" sceneMemberID="viewController">
@@ -27,7 +27,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="v0Z-F7-nDC"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.2156660259" green="0.20001384620000001" blue="0.19604778289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="v0Z-F7-nDC" firstAttribute="bottom" secondItem="5GC-Hj-vu5" secondAttribute="bottom" id="Q1C-Et-KMO"/>
                             <constraint firstItem="5GC-Hj-vu5" firstAttribute="leading" secondItem="v0Z-F7-nDC" secondAttribute="leading" id="nUG-LP-Gl2"/>
@@ -35,7 +35,7 @@
                             <constraint firstItem="5GC-Hj-vu5" firstAttribute="top" secondItem="v0Z-F7-nDC" secondAttribute="top" id="tgB-LE-BaF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="il3-Ig-cJS"/>
+                    <navigationItem key="navigationItem" title="Recipes" id="il3-Ig-cJS"/>
                     <connections>
                         <outlet property="recipeListtableView" destination="5GC-Hj-vu5" id="CMi-Qp-rRn"/>
                         <segue destination="Eca-xs-IFu" kind="show" identifier="showRecipeDetails" id="tCD-cU-Shz"/>
@@ -70,7 +70,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KgW-E7-wkk">
-                                <rect key="frame" x="0.0" y="449" width="414" height="294.5"/>
+                                <rect key="frame" x="0.0" y="449" width="414" height="331.5"/>
                                 <color key="backgroundColor" red="0.2156660259" green="0.20001384620000001" blue="0.19604778289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="20"/>
@@ -85,9 +85,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8RK-gA-CGt">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8RK-gA-CGt">
                                 <rect key="frame" x="78" y="790" width="258" height="56"/>
                                 <color key="backgroundColor" red="0.26656875009999997" green="0.58433961869999995" blue="0.36464577910000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="9SO-If-gx9"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Get directions">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
@@ -160,9 +163,9 @@
                             <constraint firstItem="KgW-E7-wkk" firstAttribute="leading" secondItem="VqX-4V-x3d" secondAttribute="leading" id="2Ub-sb-vGh"/>
                             <constraint firstItem="c1V-Ch-LBr" firstAttribute="top" secondItem="XTG-OA-eHB" secondAttribute="bottom" id="3EX-DJ-bbR"/>
                             <constraint firstItem="VqX-4V-x3d" firstAttribute="trailing" secondItem="KgW-E7-wkk" secondAttribute="trailing" id="3ZX-cY-SH5"/>
-                            <constraint firstItem="VqX-4V-x3d" firstAttribute="bottom" secondItem="8RK-gA-CGt" secondAttribute="bottom" constant="16" id="A7N-XN-xze"/>
+                            <constraint firstItem="VqX-4V-x3d" firstAttribute="bottom" secondItem="8RK-gA-CGt" secondAttribute="bottom" constant="-33" id="A7N-XN-xze"/>
                             <constraint firstItem="c1V-Ch-LBr" firstAttribute="leading" secondItem="VqX-4V-x3d" secondAttribute="leading" id="AJK-Ja-vyI"/>
-                            <constraint firstItem="8RK-gA-CGt" firstAttribute="top" secondItem="KgW-E7-wkk" secondAttribute="bottom" constant="8" symbolic="YES" id="BxS-zL-02u"/>
+                            <constraint firstItem="8RK-gA-CGt" firstAttribute="top" secondItem="KgW-E7-wkk" secondAttribute="bottom" constant="9.5" id="Ae4-Ar-nKZ"/>
                             <constraint firstItem="hcp-GU-3ow" firstAttribute="top" secondItem="VqX-4V-x3d" secondAttribute="top" constant="11" id="CgS-c8-TZe"/>
                             <constraint firstItem="8RK-gA-CGt" firstAttribute="leading" secondItem="VqX-4V-x3d" secondAttribute="leading" constant="78" id="G1n-I7-ZH7"/>
                             <constraint firstItem="8RK-gA-CGt" firstAttribute="centerX" secondItem="aHk-0K-RTY" secondAttribute="centerX" id="LBX-YF-KT2"/>
@@ -352,7 +355,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MHI-eK-RzV"/>
-                        <color key="backgroundColor" red="0.24313727020000001" green="0.27450981740000002" blue="0.35294118520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.2156660259" green="0.20001384620000001" blue="0.19604778289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OKO-z9-qxz" firstAttribute="leading" secondItem="MHI-eK-RzV" secondAttribute="leading" constant="20" id="1AB-Zd-hEA"/>
                             <constraint firstItem="fU9-2u-kmU" firstAttribute="top" secondItem="MHI-eK-RzV" secondAttribute="top" id="Cqm-0V-rFE"/>

@@ -56,6 +56,24 @@ extension RecipeViewController: UITableViewDataSource, UITableViewDelegate {
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let textView = UITextView()
+        textView.text = "Enregister you favorite recipe please \n ❗️... you can add recipes to your favorites by clicking on the button 💚 at the top right of your recipe detail"
+        textView.textColor = .orange
+        textView.textAlignment = .center
+        textView.font = .systemFont(ofSize: 24)
+        textView.backgroundColor = .darkGray
+        return textView
+    }
+   
+    
+     
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        if RecipeEntity.all().isEmpty {
+            return 150
+        }
+        return 0
+    }
 }
 
 
